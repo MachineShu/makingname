@@ -1,0 +1,52 @@
+[
+  {
+    "id": "zhi_hui",
+    "characters": "智慧",
+    "pinyin": "Zhì Huì",
+    "tone": "zhì huì",
+    "meaning": "Wisdom and intelligence",
+    "gender": "female",
+    "qualities": ["wisdom", "brightness"],
+    "culturalNote": "A name that embodies intellectual brilliance and enlightenment"
+  },
+  {
+    "id": "yong_gan",
+    "characters": "勇敢",
+    "pinyin": "Yǒng Gǎn",
+    "tone": "yǒng gǎn",
+    "meaning": "Brave and courageous",
+    "gender": "male",
+    "qualities": ["courage", "strength"],
+    "culturalNote": "A strong name representing fearlessness and determination"
+  },
+  {
+    "id": "mei_li",
+    "characters": "美丽",
+    "pinyin": "Měi Lì",
+    "tone": "měi lì",
+    "meaning": "Beautiful and lovely",
+    "gender": "female",
+    "qualities": ["beauty", "elegance"],
+    "culturalNote": "A classic name celebrating both inner and outer beauty"
+  },
+  {
+    "id": "an_ning",
+    "characters": "安宁",
+    "pinyin": "Ān Níng",
+    "tone": "ān níng",
+    "meaning": "Peaceful and tranquil",
+    "gender": "female",
+    "qualities": ["peace", "kindness"],
+    "culturalNote": "A serene name representing harmony and calmness"
+  },
+  {
+    "id": "hao_ran",
+    "characters": "浩然",
+    "pinyin": "Hào Rán",
+    "tone": "hào rán",
+    "meaning": "Vast and righteous",
+    "gender": "male",
+    "qualities": ["strength", "wisdom"],
+    "culturalNote": "A powerful name suggesting great moral character"
+  }
+]

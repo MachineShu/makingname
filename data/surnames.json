@@ -1,0 +1,32 @@
+[
+  {
+    "id": "li",
+    "character": "李",
+    "pinyin": "Lǐ",
+    "popularity": 10
+  },
+  {
+    "id": "wang",
+    "character": "王",
+    "pinyin": "Wáng",
+    "popularity": 9
+  },
+  {
+    "id": "zhang",
+    "character": "张",
+    "pinyin": "Zhāng",
+    "popularity": 9
+  },
+  {
+    "id": "liu",
+    "character": "刘",
+    "pinyin": "Liú",
+    "popularity": 8
+  },
+  {
+    "id": "chen",
+    "character": "陈",
+    "pinyin": "Chén",
+    "popularity": 8
+  }
+]

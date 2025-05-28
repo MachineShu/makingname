@@ -1,0 +1,62 @@
+[
+  {
+    "id": "wisdom",
+    "name": "Wisdom",
+    "nameZh": "智慧",
+    "description": "Intelligence, knowledge, and good judgment"
+  },
+  {
+    "id": "courage",
+    "name": "Courage",
+    "nameZh": "勇敢",
+    "description": "Bravery and strength in facing challenges"
+  },
+  {
+    "id": "beauty",
+    "name": "Beauty",
+    "nameZh": "美丽",
+    "description": "Physical and inner beauty, elegance"
+  },
+  {
+    "id": "peace",
+    "name": "Peace",
+    "nameZh": "平和",
+    "description": "Tranquility, harmony, and calmness"
+  },
+  {
+    "id": "joy",
+    "name": "Joy",
+    "nameZh": "快乐",
+    "description": "Happiness, cheerfulness, and positive energy"
+  },
+  {
+    "id": "brightness",
+    "name": "Brightness",
+    "nameZh": "光明",
+    "description": "Light, brilliance, and enlightenment"
+  },
+  {
+    "id": "strength",
+    "name": "Strength",
+    "nameZh": "力量",
+    "description": "Physical and mental power, resilience"
+  },
+  {
+    "id": "elegance",
+    "name": "Elegance",
+    "nameZh": "优雅",
+    "description": "Grace, refinement, and sophisticated beauty"
+  },
+  {
+    "id": "prosperity",
+    "name": "Prosperity",
+    "nameZh": "繁荣",
+    "description": "Success, wealth, and flourishing"
+  },
+  {
+    "id": "kindness",
+    "name": "Kindness",
+    "nameZh": "善良",
+    "description": "Compassion, gentleness, and caring nature"
+  }
+]
