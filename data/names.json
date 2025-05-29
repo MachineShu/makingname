@@ -48,5 +48,105 @@
     "gender": "male",
     "qualities": ["strength", "wisdom"],
     "culturalNote": "A powerful name suggesting great moral character"
+  },
+  {
+    "id": "xin_yi",
+    "characters": "心怡",
+    "pinyin": "Xīn Yí",
+    "tone": "xīn yí",
+    "meaning": "Joyful heart",
+    "gender": "female",
+    "qualities": ["joy", "kindness"],
+    "culturalNote": "A name expressing happiness and contentment"
+  },
+  {
+    "id": "ming_liang",
+    "characters": "明亮",
+    "pinyin": "Míng Liàng",
+    "tone": "míng liàng",
+    "meaning": "Bright and luminous",
+    "gender": "male",
+    "qualities": ["brightness", "wisdom"],
+    "culturalNote": "A name symbolizing clarity and enlightenment"
+  },
+  {
+    "id": "ya_zhi",
+    "characters": "雅致",
+    "pinyin": "Yǎ Zhì",
+    "tone": "yǎ zhì",
+    "meaning": "Elegant and refined",
+    "gender": "female",
+    "qualities": ["elegance", "beauty"],
+    "culturalNote": "A sophisticated name representing grace and refinement"
+  },
+  {
+    "id": "qiang_sheng",
+    "characters": "强盛",
+    "pinyin": "Qiáng Shèng",
+    "tone": "qiáng shèng",
+    "meaning": "Strong and prosperous",
+    "gender": "male",
+    "qualities": ["strength", "prosperity"],
+    "culturalNote": "A name conveying power and success"
+  },
+  {
+    "id": "ci_ai",
+    "characters": "慈爱",
+    "pinyin": "Cí Ài",
+    "tone": "cí ài",
+    "meaning": "Loving and compassionate",
+    "gender": "female",
+    "qualities": ["kindness", "peace"],
+    "culturalNote": "A gentle name expressing maternal love and care"
+  },
+  {
+    "id": "jun_wei",
+    "characters": "俊伟",
+    "pinyin": "Jùn Wěi",
+    "tone": "jùn wěi",
+    "meaning": "Handsome and great",
+    "gender": "male",
+    "qualities": ["strength", "elegance"],
+    "culturalNote": "A distinguished name for someone destined for greatness"
+  },
+  {
+    "id": "hui_min",
+    "characters": "慧敏",
+    "pinyin": "Huì Mǐn",
+    "tone": "huì mǐn",
+    "meaning": "Wise and quick-minded",
+    "gender": "female",
+    "qualities": ["wisdom", "brightness"],
+    "culturalNote": "A name for someone with sharp intellect and quick thinking"
+  },
+  {
+    "id": "le_guan",
+    "characters": "乐观",
+    "pinyin": "Lè Guān",
+    "tone": "lè guān",
+    "meaning": "Optimistic and cheerful",
+    "gender": "male",
+    "qualities": ["joy", "brightness"],
+    "culturalNote": "A positive name encouraging a bright outlook on life"
+  },
+  {
+    "id": "wen_jing",
+    "characters": "文静",
+    "pinyin": "Wén Jìng",
+    "tone": "wén jìng",
+    "meaning": "Gentle and quiet",
+    "gender": "female",
+    "qualities": ["peace", "elegance"],
+    "culturalNote": "A refined name suggesting cultured tranquility"
+  },
+  {
+    "id": "fu_gui",
+    "characters": "富贵",
+    "pinyin": "Fù Guì",
+    "tone": "fù guì",
+    "meaning": "Wealthy and noble",
+    "gender": "male",
+    "qualities": ["prosperity", "strength"],
+    "culturalNote": "A traditional name wishing for wealth and high status"
   }
 ]
