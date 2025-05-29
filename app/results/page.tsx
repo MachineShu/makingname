@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Heart, Volume2, RotateCcw } from 'lucide-react';
@@ -8,7 +8,7 @@ import { ChineseName, Gender } from '@/lib/types';
 import { generateNames, favorites, speakText } from '@/lib/names';
 import { cn } from '@/lib/utils';
 
-export default function ResultsPage() {
+function ResultsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [names, setNames] = useState<ChineseName[]>([]);
@@ -17,7 +17,10 @@ export default function ResultsPage() {
 
   const gender = searchParams.get('gender') as Gender;
   const qualitiesParam = searchParams.get('qualities');
-  const selectedQualities = qualitiesParam ? qualitiesParam.split(',') : [];
+  
+  const selectedQualities = useMemo(() => {
+    return qualitiesParam ? qualitiesParam.split(',') : [];
+  }, [qualitiesParam]);
 
   useEffect(() => {
     if (gender && selectedQualities.length > 0) {
@@ -100,15 +103,19 @@ export default function ResultsPage() {
                       {name.pinyin}
                     </p>
                     <p className="text-sm text-foreground/60">
-                      {name.meaning}
+                      {name.tone}
                     </p>
                   </div>
                   
-                  <div className="flex items-center justify-center space-x-3">
+                  <p className="text-foreground/80 mb-4 text-center">
+                    {name.meaning}
+                  </p>
+                  
+                  <div className="flex justify-center space-x-2 mb-4">
                     <button
                       onClick={() => handleSpeak(name.characters)}
-                      className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-                      title="Play pronunciation"
+                      className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+                      title="Pronounce name"
                     >
                       <Volume2 className="h-4 w-4" />
                     </button>
@@ -118,8 +125,8 @@ export default function ResultsPage() {
                       className={cn(
                         "p-2 rounded-full transition-colors",
                         isFavorite
-                          ? "bg-red-100 text-red-600 hover:bg-red-200"
-                          : "bg-secondary text-foreground/60 hover:bg-red-100 hover:text-red-600"
+                          ? "bg-red-100 hover:bg-red-200 text-red-600"
+                          : "bg-secondary hover:bg-secondary/80 text-foreground/60"
                       )}
                       title={isFavorite ? "Remove from favorites" : "Add to favorites"}
                     >
@@ -128,9 +135,19 @@ export default function ResultsPage() {
                     
                     <Link
                       href={`/name/${name.id}`}
-                      className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm"
+                      className="p-2 rounded-full bg-secondary hover:bg-secondary/80 text-foreground/60 transition-colors"
+                      title="View details"
                     >
-                      Details
+                      <RotateCcw className="h-4 w-4" />
+                    </Link>
+                  </div>
+                  
+                  <div className="text-center">
+                    <Link
+                      href={`/name/${name.id}`}
+                      className="text-primary hover:underline text-sm"
+                    >
+                      View Details
                     </Link>
                   </div>
                 </div>
@@ -139,30 +156,43 @@ export default function ResultsPage() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-lg text-foreground/70 mb-6">
-              No names found for your preferences. Try adjusting your selections.
-            </p>
+            <p className="text-foreground/70 mb-4">No names found for your preferences.</p>
             <Link
               href="/preferences"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center space-x-2 text-primary hover:underline"
             >
-              <RotateCcw className="mr-2 h-4 w-4" />
-              Try Again
+              <ArrowLeft className="h-4 w-4" />
+              <span>Try different preferences</span>
             </Link>
           </div>
         )}
 
-        {/* 文化提示 */}
+        {/* Cultural Tip */}
         <div className="bg-accent rounded-lg p-6 text-center">
           <h3 className="font-semibold text-accent-foreground mb-2">
             💡 Cultural Tip
           </h3>
           <p className="text-accent-foreground/80">
             In China, family names come first, followed by the given name. 
-            The meaning of a name is highly valued and believed to influence one's character and destiny.
+            The meaning of a name is highly valued and believed to influence one&apos;s character and destiny.
           </p>
         </div>
       </main>
     </div>
+  );
+}
+
+export default function ResultsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-foreground/70">Loading...</p>
+        </div>
+      </div>
+    }>
+      <ResultsContent />
+    </Suspense>
   );
 }

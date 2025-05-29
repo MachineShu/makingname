@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
-import { Gender, Quality } from '@/lib/types';
+import { Gender } from '@/lib/types';
 import { getQualities } from '@/lib/names';
 import { cn } from '@/lib/utils';
 
@@ -116,7 +116,7 @@ export default function PreferencesPage() {
           {/* 品质选择 */}
           <div>
             <h2 className="text-xl font-semibold text-foreground mb-2">
-              Choose 1-3 qualities you'd like your name to embody:
+              Choose 1-3 qualities you&apos;d like your name to embody:
             </h2>
             <p className="text-sm text-foreground/60 mb-6">
               Selected: {selectedQualities.length}/3

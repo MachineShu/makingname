@@ -111,12 +111,12 @@ export default function Home() {
             </h2>
             <div className="bg-accent rounded-lg p-8">
               <p className="text-lg text-accent-foreground mb-4">
-                <strong>Cultural Insight:</strong> In Chinese culture, names carry deep significance and are believed to influence one's destiny.
+                <strong>Cultural Insight:</strong> In Chinese culture, names carry deep significance and are believed to influence one&apos;s destiny.
               </p>
               <p className="text-accent-foreground/80">
                 Chinese names typically consist of a family name (surname) followed by a given name. 
                 The meaning of each character is carefully chosen to reflect positive qualities, 
-                hopes, and aspirations for the person.
+                hopes, and aspirations for the person&apos;s future.
               </p>
             </div>
           </div>

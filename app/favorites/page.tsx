@@ -5,8 +5,6 @@ import Link from 'next/link';
 import { ArrowLeft, Heart, Volume2, Trash2, RotateCcw } from 'lucide-react';
 import { ChineseName } from '@/lib/types';
 import { getNameById, favorites, speakText } from '@/lib/names';
-import { cn } from '@/lib/utils';
-
 export default function FavoritesPage() {
   const [favoriteNames, setFavoriteNames] = useState<ChineseName[]>([]);
   const [loading, setLoading] = useState(true);

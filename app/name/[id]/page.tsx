@@ -60,7 +60,7 @@ export default function NameDetailPage() {
     if (navigator.share) {
       try {
         await navigator.share(shareData);
-      } catch (err) {
+      } catch {
         // 用户取消分享或其他错误
       }
     } else {

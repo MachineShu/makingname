@@ -18,12 +18,12 @@ export const storage = {
     }
   },
   
-  set: (key: string, value: any) => {
+  set: (key: string, value: unknown) => {
     if (typeof window === 'undefined') return;
     try {
       localStorage.setItem(key, JSON.stringify(value));
     } catch {
-      // 静默处理错误
+      // 忽略错误
     }
   },
   
